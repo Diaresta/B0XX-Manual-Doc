@@ -14,10 +14,10 @@
             <li><a class="nav-link" href="#The_Coordinate_Plane">The Coordinate Plane</a></li>
             <li><a class="nav-link" href="#Analog_Stick_Behavior">Analog Stick Behavior</a></li>
             <li><a class="nav-link" href="#Modifier_Buttons">Modifier Buttons</a></li>
-            <li><a class="nav-link" href="#">Up-B</a></li>
-            <li><a class="nav-link" href="#">Shoulder Triggers</a></li>
-            <li><a class="nav-link" href="#">Other Functionality</a></li>
-            <li><a class="nav-link" href="#">Nerfs</a></li>
+            <li><a class="nav-link" href="#Up_B">Up-B</a></li>
+            <li><a class="nav-link" href="#Shoulder_Triggers">Shoulder Triggers</a></li>
+            <li><a class="nav-link" href="#Other_Functionality">Other Functionality</a></li>
+            <li><a class="nav-link" href="#Nerfs">Nerfs</a></li>
         </ul>
     </nav>
 
@@ -321,6 +321,317 @@
                     <em>Advanced:</em> Once again, holding <em>both</em> horizontal cardinal directions in
                     conjunction with Modifier Y won’t result in your X-value of 1.0 being
                     modified. See Section 8.1.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Up_B">
+            <header>6. Up-B</header>
+            <article>
+                <h2>6.1. Firefox Angles</h2>
+                <p><em>This section is only relevant if you are playing Fox/Falco.</em></p>
+                <figure>
+                    <img>
+                    <figcaption>
+                        <em>White:</em> 23°, 45°, and 67°<br>
+                        <em>Yellow:</em>Yellow: Evenly distributed angles in between
+                    </figcaption>
+                </figure>
+                <p>
+                    Similarly, Modifier X and Y’s 23° and 67° angles (and the un-modified 45°
+                    angle) aren’t nearly sufficient for recovering as Fox/Falco. By holding each
+                    of the <strong>4 C-stick directions</strong> in conjunction with either of the modifier buttons,
+                    <strong>4 additional Firefox angles are unlocked.</strong> These aren’t just any Firefox
+                    angles, but the most evenly distributed angles in the entire game.
+                </p>
+            </article>
+
+            <article>
+                <h2>6.2. Extended Up-B Angles</h2>
+                <p><em>This section is only relevant if you are playing Mewtwo/Pichu/Pikachu/Sheik/Zelda.</em></p>
+                <figure>
+                    <img>
+                    <figcaption>
+                        <em>White:</em> 45°<br>
+                        <em>Red:</em> Evenly distributed surrounding angles<br>
+                    </figcaption>
+                </figure>
+                <p>
+                    Unfortunately, the other 5 characters who can angle their up-B won’t travel as
+                    far if you use the Firefox coordinates from Section 6.1 because their up-B’s
+                    are reliant on the magnitude of the vector used to angle them. For this reason,
+                    an additional step is required to push Section 6.1’s coordinates outwards and
+                    towards the rim. To access these higher magnitude coordinates, hold
+                    <strong>Modifier X/Y and B and one of the 4 C-stick directions.</strong> For the non-C
+                    angles (pictured in green), just hold <strong>Modifier X/Y and B.</strong>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Shoulder_Triggers">
+            <header>7. Shoulder Triggers</header>
+            <article>
+                <h2>7.1. Airdodge</h2>
+                <figure>
+                    <img>
+                    <figcaption>
+                        <em>L/R + Modifier X + Quadrant 1/2/3/4:</em> X .6375 Y .3750 (30.5°)<br>
+                        <em>L/R + No Modifiers + Quadrant 1/2/3/4:</em> X .7000 Y .6875 (44.5°)*<br>
+                        <em>L/R + Modifier Y + Quadrant 3/4:</em> X .5000 Y .8500 (59.5°)**<br>
+                    </figcaption>
+                </figure>
+                <p>
+                    On a software level, <strong>L and R support airdodging by reducing the
+                    shallowness/steepness of Modifier X/Y’s 23° and 67° angles; L or R will
+                    adjust these to 30.5° and 59.5° respectively.</strong> This deliberate nerf is intended
+                    to simulate the increased difficulty a Gamecube controller user faces in
+                    airdodging steeply (as compared to up-B’ing steeply) due to the smaller
+                    timing window for aiming an airdodge.
+                </p>
+                
+                <p>
+                    As with all of the other coordinates on the B0XX, X .6375 Y .3750 (30.5°)
+                    and X .5000 Y .8500 (59.5°) are non-arbitrary. After thoroughly examining
+                    the impact an airdodge angle has on ledge-dash sequences, these angles
+                    proved to be magic #’s for some of <em>Melee’s</em> most popular characters. They
+                    were finalized on the basis of promoting healthy ledge-dash behavior across
+                    the cast, as well as being reasonably reliable angles to pinpoint when
+                    airdodging with a Gamecube controller.
+                </p>
+
+                <p><sub>
+                    *L or R + No Modifiers gives X .7000 Y .6875 (44.5°) in quadrants 3 and 4
+                    so that shield drop is retained on vanilla Melee.<br>
+                    **In quadrants 1 and 2, Modifier Y’s airdodge angle is adjusted to X .4750
+                    Y .8750 (61.5°) as to ban a Peach-specific technique that requires an
+                    extremely precise airdodge angle.
+                </sub></p>
+            </article>
+
+            <article>
+                <h2>7.2. Shield Tilt</h2>
+                <figure>
+                    <img>
+                    <figcaption>
+                        <em>L/R + Modifier X + Horizontals:</em> X .6625<br>
+                        <em>L/R + Modifier X + Verticals:</em> Y .5375<br>
+                        <em>L/R + Modifier X + Quadrants:</em> X .6375 Y .3750<br>
+                    </figcaption>
+                </figure>
+                <p>
+                    When Modifier X is held in conjunction with L or R, <strong>all coordinates will be
+                    within the shield tilt range.</strong>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Other_Functionality">
+            <header>8. Other Functionality</header>
+            <article>
+                <h2>8.1. Modifier X/Y + Both Horizontal Cardinals</h2>
+                <p>
+                    In Chapter 5, an inconspicuous, but crucial feature was listed: Modifier X and
+                    Y’s refusal to modify horizontal analog stick inputs <em>when Left and Right are
+                    held simultaneously.</em>
+                </p>
+                
+                <p>
+                    This feature was implemented in order to optimize a single in-game scenario:
+                    <strong>ledge-dashing.</strong> During a ledge-dash, the <strong>jump trajectory</strong> registered on your
+                    character’s mid-air jump frame contributes to not only the overall distance
+                    your character travels, but in some cases, whether the ledge-dash succeeds or
+                    fails altogether! By retaining the best possible jump trajectory value of X 1.0
+                    when both horizontal cardinals are held, Modifiers X and Y allow you to
+                    ledge-dash at different airdodge angles <em>without</em> arbitrarily stunting your mid-
+                    air jump. <strong>This is particularly useful when you use Back to fall from the
+                    ledge, followed by Forward + Jump.</strong>
+                </p>
+
+                <p>
+                    <em>Without this feature:</em> Hold Modifier X → Back (X -.6625) → Forward +
+                    Jump (X .6625) → Down-forward + Airdodge
+                </p>
+
+                <p>
+                    <em>With this feature:</em> Hold Modifier X → Back (X -.6625) → <strong>Forward + Jump
+                    (X 1.0)</strong> → Down-forward + Airdodge
+                </p>
+
+                <p><em>For more information on ledgedashing, check out this YouTube video:</em></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FzOctYnwwuc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+
+            <article>
+                <h2>8.2. Angled F-Smash</h2>
+                <img>
+                <p>
+                    With the B0XX’s analog stick, it is impossible to pinpoint angled F-smash
+                    territory (outside of a few of the Extended Up-B angles from Section 6.2, but
+                    those require B to be held). In order to perform these Smash attacks, <strong>hold
+                    Modifier X in conjunction with either analog Up or Down (depending on
+                    which angled F-smash you want). Then, press C-Left or C-Right to
+                    receive an angled F-smash input on the C-stick.</strong>
+                </p>
+            </article>
+
+            <article>
+                <h2>8.3. C-Stick</h2>
+                <figure>
+                    <img>
+                    <figcaption>
+                        <em>Horizontals:</em> X 1.0<br>
+                        <em>Verticals:</em> Y 1.0<br>
+                        <em>Quadrants:</em> X .5250 Y .8500<br>
+                    </figcaption>
+                </figure>
+                <p>
+                    Unlike the analog stick, the C-stick’s quadrants do not default to the expected
+                    45° angle. <strong>Instead, they give a steeper angle that is intended to be used to
+                    ASDI diagonally and perform slide-offs during specific frames of tech
+                    roll and get-up roll that cause your character’s ECB (environmental
+                    collision box) to shift to the side of the platform.</strong> In order to perform this                   
+                    technique, shift your right hand down to the C-stick buttons and hold C-
+                    Down with your thumb in addition to either C-left with your index finger or                  
+                    C-right with your ring finger.
+                </p>
+
+                <p><em>For more information on slide-offs, check out this YouTube video:</em></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tBbmJQf3yOw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+
+            <article>
+                <h2>8.4. D-Pad</h2>
+                <p>
+                    To access the B0XX’s D-pad, hold down Modifier X and Modifier Y
+                    simultaneously. The 4 C-stick directions will then transform into the D-pad.
+                </p>
+
+                <p>
+                    <em>Note:</em> When Modifier X and Modifier Y are held simultaneously, neither of
+                    their analog stick modifications will work until either Modifier X or Modifier
+                    Y is released.
+                </p>
+            </article>
+
+            <article>
+                <h2>8.5. Nunchuk</h2>
+                <img>
+                <p>
+                    The B0XX is compatible with the Nintendo Wii Nunchuk (sold separately).
+                    Once plugged in, the Nunchuk will cause the B0XX to hot-swap into
+                    <em>Nunchuk Mode,</em> during which the 4 analog stick directions, Modifier X and Y,
+                    and L are disabled. The Nunchuk’s Z button (large button) then behaves as L.
+                    <em>Nunchuk Mode</em> allows Gamecube controller users to enjoy the B0XX’s
+                    improved button layout while retaining the analog stick control they are
+                    familiar with.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Nerfs">
+            <header>9. Nerfs</header>
+            <article>
+                <p>
+                    Throughout this document, the controller presented to you was deliberately
+                    stripped of its ability to perform certain techniques within <em>Super Smash Bros.
+                    Melee</em> in order to create a fair gameplay experience. These techniques, which
+                    require extreme precision to perform with a Gamecube controller, include:
+                </p>
+                
+                <ul>
+                    <li>Ice Climbers desyncs</li>
+                    <li>Shield Drop directly downwards</li>
+                    <li>Turning and performing a vertical tilt attack <em>without</em> buffering the analog
+                        stick in Y-smash</li>
+                    <li>Pointing in Y-tilt while also pointing in vertical-B territory</li>
+                    <li>Perfect ambiguous DI mix-ups when thrown vertically (i.e. X-values directly
+                        next to each other instead of spaced out)</li>
+                    <li>Extremely steep up-B and airdodge angles</li>
+                    <li>Extremely light analog L/R presses</li>
+                </ul>
+
+                <p>
+                    The B0XX’s inability to perform the techniques listed above should have no
+                    effect on your in-game decisions so long as you are aware that these
+                    techniques are not present on the controller. There are, however, a few
+                    additional restrictions on the B0XX that have not yet been documented. This
+                    chapter will cover them.
+                </p>
+            </article>
+
+            <article>
+                <h2>9.1. Accidental Side-B</h2>
+                <figure>
+                    <img>
+                    <figcaption>
+                        <em>Modifier Y + Horizontal + B:</em> <strike>X .3375</strike> → X 1.0
+                    </figcaption>
+                </figure>
+                <p>
+                    Normally, Modifier Y + Horizontal (X .3375) is located in neutral-B territory.
+                    While the slight DI option offered by this coordinate is a healthy addition to
+                    the B0XX, its ability to guarantee a turnaround → neutral-B (without
+                    incurring the risk of an accidental side-B) is not.
+                </p>
+
+                <p>
+                    In order to prevent this exploit, Modifier Y + Horizontal is modified to X 1.0
+                    when the B button is held. <strong>This forces the B0XX user to “flick” the analog
+                    stick by quickly pressing, then releasing a horizontal direction in order
+                    to perform a turnaround neutral-B.</strong>
+                </p>
+            </article>
+
+            <article>
+                <h2>9.2. Smash DI</h2>
+                <img>
+                <p>
+                    On a Gamecube controller, the go-to method for smash DI is “quarter-circle
+                    smash DI,” which involves pointing the analog stick in a cardinal direction
+                    followed by an adjacent diagonal direction in order to register 2 smash DI
+                    inputs. Due to digital inputs’ lack of physical recoil, however, the B0XX is
+                    normally at the advantage of being able to attempt a 3rd smash DI input.
+                </p>
+
+                <p>
+                    In order to level the playing field, <strong>the B0XX is programmed to recognize a
+                    quarter-circle motion on the analog stick and outlaw the correct diagonal
+                    direction to go to next for 4 frames in response.</strong> For example:
+                </p>
+
+                <ul>
+                    <li class="greenLiText"><em>Frame 1:</em> Right (SDI)</li>
+                    <li class="greenLiText"><em>Frame 2:</em> Up + Right (SDI)</li>
+                    <li class="redLiText"><em>Frame 3:</em> Down + Right is outlawed</li>
+                    <li class="redLiText"><em>Frame 4:</em> Down + Right is outlawed</li>
+                    <li class="redLiText"><em>Frame 5:</em> Down + Right is outlawed</li>
+                    <li class="redLiText"><em>Frame 6:</em> Down + Right is outlawed</li>
+                </ul>
+
+                <p>
+                    For clarification, an attempt to input Down + Right during frames 3-6 results
+                    in a null input (the analog stick would remain in Up + Right in this case).:
+                </p>
+
+                <p>
+                    <em>Note:</em> The B0XX’s smash DI nerf will never conflict with any other area of
+                    the game, as the double quarter-circle motion it outlaws is not required to
+                    perform any traditional techniques.
+                </p>
+            </article>
+
+            <article>
+                <h2>9.3. Pivot Tilts</h2>
+                <img>
+                <p>
+                    On a Gamecube controller, performing vertical tilts shortly after pivoting is
+                    nearly impossible due to the nature of the analog stick motion required. In
+                    accordance with this shortcoming, the B0XX is programmed to deny pivot U/
+                    UF-tilt attempts for 9 frames and pivot D/DF-tilt attempts for 4 frames.
+                </p>
+
+                <p>
+                    <em>Note:</em> Only the A button press is outlawed (the directional input is not).
                 </p>
             </article>
         </section>
