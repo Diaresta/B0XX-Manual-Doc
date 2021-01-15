@@ -70,6 +70,7 @@ figure {
 #nav-logo {
     width: 258px;
     margin-left: 20px;
+    filter: drop-shadow(2px 2px .03rem black);
 }
 
 #main-doc {
