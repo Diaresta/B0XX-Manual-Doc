@@ -10,15 +10,17 @@
 
         <!-- Import Google font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" type="text/css"> 
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> 
 
         <!-- Page Title -->
         <title>B0XX - SSBM Documentation</title>
         <link href="images/b0xxx.png" rel="shortcut icon" type="image/png">
     </head>
     <body>
+        <!-- Add button to border-right to collapse/open navbar -->
         <nav id="navbar">
-            <header>B0XX SSBM Manual</header>
+            <img id="nav-logo" src="images/header-logo.png"  alt="B0XX Logo" type="image/png">
+            <header>Super Smash Bros. Melee Manual</header>
             <ul>
                 <li><a class="nav-link" href="#Introduction">Introduction</a></li>
                 <li><a class="nav-link" href="#Basic_Functionality">Basic Functionality</a></li>
@@ -34,8 +36,8 @@
 
         <main id="main-doc">
             <section class="main-section" id="Introduction">
-                <header>1. Introduction</header>
-                <article>
+                <header class="main-header">1. Introduction</header>
+                <article class="main-article">
                     <p>
                         Developed by Aziz “Hax$” Al-Yami between 2016 and 2020, the B0XX is an
                         ergonomic alternative to the Nintendo Gamecube controller primarily
@@ -71,8 +73,8 @@
             </section>
 
             <section class="main-section" id="Basic_Functionality">
-                <header>2. Basic_Functionality</header>
-                <article>
+                <header class="main-header">2. Basic Functionality</header>
+                <article class="main-article">
                     <h2>2.1. Button Layout</h2>
                     <img id="b0xxLayout" src="images/2.1Capture.PNG" alt="B0xx Controller Layout" type="image/png">
                     <p>
@@ -99,7 +101,7 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>2.2. Recommended Technique</h2>
                     <p>
                         For the sake of comfort and/or efficiency, it is recommended (or in some
@@ -107,16 +109,16 @@
                         specific button inputs on the B0XX:
                     </p>
                     <ul>
-                        <li>Aerial Attacks: X → A or C</li>
-                        <li>Airborne Special Moves: X → B</li>
-                        <li>Jump-Cancel Grab: X → Z or Up → Z</li>
-                        <li>L-Cancel: Z</li>
-                        <li>Tech: L</li>
-                        <li>Wall-Jump Tech: X or Up→ L</li>
-                        <li>Wavedash*: Y → R</li>
-                        <li>Airdodge Upwards*: L</li>
-                        <li>Shield: L</li>
-                        <li>Shield Tilt: L + Modifier X</li>
+                        <li class="main-li">Aerial Attacks: X → A or C</li>
+                        <li class="main-li">Airborne Special Moves: X → B</li>
+                        <li class="main-li">Jump-Cancel Grab: X → Z or Up → Z</li>
+                        <li class="main-li">L-Cancel: Z</li>
+                        <li class="main-li">Tech: L</li>
+                        <li class="main-li">Wall-Jump Tech: X or Up→ L</li>
+                        <li class="main-li">Wavedash*: Y → R</li>
+                        <li class="main-li">Airdodge Upwards*: L</li>
+                        <li class="main-li">Shield: L</li>
+                        <li class="main-li">Shield Tilt: L + Modifier X</li>
                     </ul>
                     <p><sub>
                         *Wavedashing with R is recommended because of the strength provided by
@@ -127,9 +129,9 @@
             </section>
 
             <section class="main-section" id="The_Coordinate_Plane">
-                <header>3. The Coordinate Plane</header>
-                <article>
-                    <img id="imgSquare" src="images/3CaptureSquare.png" alt="Analog Stick Coordinates" type="image/png">
+                <header class="main-header">3. The Coordinate Plane</header>
+                <article class="main-article">
+                    <img class="imgSquare" src="images/3CaptureSquare.png" alt="Analog Stick Coordinates" type="image/png">
                     <p>
                         Since the B0XX does not have access to every coordinate on a Gamecube
                         controller’s analog stick, a basic overview of the coordinate plane will be
@@ -140,9 +142,9 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>3.1. Tilt and Smash</h2>
-                    <img id="imgSquare" src="images/3.1CaptureSquare.png" alt="Tilt/Smash Coordinates" type="image/png">
+                    <img class="imgSquare" src="images/3.1CaptureSquare.png" alt="Tilt/Smash Coordinates" type="image/png">
                     <p>
                         Along the X and Y-axes, there are [different] cut-offs that separate “Tilt”
                         territory from “Smash” territory. The differences between these territories are
@@ -153,32 +155,32 @@
                     </p>
                 </article>
                 
-                <article>
+                <article class="main-article">
                     <h2>3.2. 50° Line</h2>
-                    <img id="imgSquare" src="images/3.2CaptureSquare.png" alt="50° Line Coordinate" type="image/png">
+                    <img class="imgSquare" src="images/3.2CaptureSquare.png" alt="50° Line Coordinate" type="image/png">
                     <p>
                         Within the quadrants, there is a 50° Line that distinguishes various actions.
                         Most notably, < 50° territory is useful for angled F-tilt and getting up from
                         the ledge, while > 50° territory is useful for turnaround U-tilt/D-tilt and
                         falling from the ledge.
                     </p>
-                    <img id="imgSquare" src="images/3.2.1CaptureSquare.png" alt="50° Coordinate Overlap" type="image/png">
+                    <img class="imgSquare" src="images/3.2.1CaptureSquare.png" alt="50° Coordinate Overlap" type="image/png">
                     <p>
                         In case you were curious, here is a diagram showing what the Tilt/Smash
                         zones + 50° Line look like when overlapped.
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>3.3. Special Moves</h2>
-                    <img id="imgSquare" src="images/3.3CaptureSquare.png" alt="Grounded Special Move Coordinates" type="image/png">
+                    <img class="imgSquare" src="images/3.3CaptureSquare.png" alt="Grounded Special Move Coordinates" type="image/png">
                     <p>
                         When your character is grounded, a neutral-B can be performed by pointing
                         in either red territory or the center dead zone, a side-B can be performed by
                         pointing in purple territory, and a vertical-B can be performed by pointing in
                         blue territory.
                     </p>
-                    <img id="imgSquare" src="images/3.3.1CaptureSquare.png" alt="Airborne Special Move Coordinates" type="image/png">
+                    <img class="imgSquare" src="images/3.3.1CaptureSquare.png" alt="Airborne Special Move Coordinates" type="image/png">
                     <p>
                         When your character is airborne, neutral-B territory remains the same, but the
                         corners of the coordinate plane are swapped; what was formerly side-B
@@ -186,9 +188,9 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>3.4. Out-of-Shield Options</h2>
-                    <img id="imgSquare" src="images/3.4CaptureSquare.png" alt="Out-of-Shield Option Coordinates" type="image/png">
+                    <img class="imgSquare" src="images/3.4CaptureSquare.png" alt="Out-of-Shield Option Coordinates" type="image/png">
                     <p>
                         When you are shielding, Roll and Spotdodge can be performed by pointing at
                         => .7000 in the appropriate direction. Tap Jump still requires a Smash input
@@ -203,10 +205,10 @@
             </section>
 
             <section class="main-section" id="Analog_Stick_Behavior">
-                <header>4. Analog Stick Behavior</header>
-                <article>
+                <header class="main-header">4. Analog Stick Behavior</header>
+                <article class="main-article">
                     <h2>4.1. Un-Modified Inputs</h2>
-                    <img id="imgSquare" src="images/4.1CaptureSquare.png" alt="Un-Modified Input Coordinates" type="image/png">
+                    <img class="imgSquare" src="images/4.1CaptureSquare.png" alt="Un-Modified Input Coordinates" type="image/png">
                     <p>
                         On their own (without the use of Modifier X, Modifier Y, or any other button
                         on the B0XX), the 4 analog stick directions will pinpoint 1.0 cardinal vectors
@@ -215,7 +217,7 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>4.2. Override</h2>
                     <p>
                         The B0XX handles opposite cardinal inputs (i.e. Left → Right) by overriding
@@ -241,11 +243,11 @@
             </section>
 
             <section class="main-section" id="Modifier_Buttons">
-                <header>5. Modifier Buttons</header>
-                <article>
+                <header class="main-header">5. Modifier Buttons</header>
+                <article class="main-article">
                     <h2>5.1. Modifier X</h2>
                     <figure>
-                        <img id="imgSquare" src="images/5.1CaptureSquare.png" alt=" Modifier X Coordinates" type="image/png">
+                        <img class="imgSquare" src="images/5.1CaptureSquare.png" alt=" Modifier X Coordinates" type="image/png">
                         <figcaption>
                             Horizontals: X .6625<br>
                             Verticals: Y .5375<br>
@@ -299,10 +301,10 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>5.2. Modifier Y</h2>
                     <figure>
-                        <img id="imgSquare" src="images/5.2CaptureSquare.png" alt="Modifier Y Coordinates" type="image/png">
+                        <img class="imgSquare" src="images/5.2CaptureSquare.png" alt="Modifier Y Coordinates" type="image/png">
                         <figcaption>
                             Horizontals: X .3375<br>
                             Verticals: Y .7375<br>
@@ -336,15 +338,15 @@
             </section>
 
             <section class="main-section" id="Up_B">
-                <header>6. Up-B</header>
-                <article>
+                <header class="main-header">6. Up-B</header>
+                <article class="main-article">
                     <h2>6.1. Firefox Angles</h2>
                     <p><em>This section is only relevant if you are playing Fox/Falco.</em></p>
                     <figure>
                         <img id="smSquare" src="images/6.1CaptureSmSquare.png" alt="Firefox Angle Coordinates" type="image/png">
                         <figcaption>
                             <em>White:</em> 23°, 45°, and 67°<br>
-                            <em>Yellow:</em>Yellow: Evenly distributed angles in between
+                            <em>Yellow:</em> Evenly distributed angles in between
                         </figcaption>
                     </figure>
                     <p>
@@ -356,7 +358,7 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>6.2. Extended Up-B Angles</h2>
                     <p><em>This section is only relevant if you are playing Mewtwo/Pichu/Pikachu/Sheik/Zelda.</em></p>
                     <figure>
@@ -379,8 +381,8 @@
             </section>
 
             <section class="main-section" id="Shoulder_Triggers">
-                <header>7. Shoulder Triggers</header>
-                <article>
+                <header class="main-header">7. Shoulder Triggers</header>
+                <article class="main-article">
                     <h2>7.1. Airdodge</h2>
                     <figure>
                         <img id="smSquare" src="images/7.1CaptureSmSquare.png" alt="Airdodge Coordinates" type="image/png">
@@ -418,10 +420,10 @@
                     </sub></p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>7.2. Shield Tilt</h2>
                     <figure>
-                        <img id="imgSquare" src="images/7.2CaptureSquare.png" alt="Shield Tilt Coordinates" type="image/png">
+                        <img class="imgSquare" src="images/7.2CaptureSquare.png" alt="Shield Tilt Coordinates" type="image/png">
                         <figcaption>
                             <em>L/R + Modifier X + Horizontals:</em> X .6625<br>
                             <em>L/R + Modifier X + Verticals:</em> Y .5375<br>
@@ -436,8 +438,8 @@
             </section>
 
             <section class="main-section" id="Other_Functionality">
-                <header>8. Other Functionality</header>
-                <article>
+                <header class="main-header">8. Other Functionality</header>
+                <article class="main-article">
                     <h2>8.1. Modifier X/Y + Both Horizontal Cardinals</h2>
                     <p>
                         In Chapter 5, an inconspicuous, but crucial feature was listed: Modifier X and
@@ -471,9 +473,9 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/FzOctYnwwuc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>8.2. Angled F-Smash</h2>
-                    <img id="imgSquare" src="images/8.2CaptureSquare.png" alt="Angled F-Smash Coordinates" type="image/png">
+                    <img class="imgSquare" src="images/8.2CaptureSquare.png" alt="Angled F-Smash Coordinates" type="image/png">
                     <p>
                         With the B0XX’s analog stick, it is impossible to pinpoint angled F-smash
                         territory (outside of a few of the Extended Up-B angles from Section 6.2, but
@@ -484,10 +486,10 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>8.3. C-Stick</h2>
                     <figure>
-                        <img id="imgSquare" src="images/8.3CaptureSquare.png" alt="C-Stick Coordinates" type="image/png">
+                        <img class="imgSquare" src="images/8.3CaptureSquare.png" alt="C-Stick Coordinates" type="image/png">
                         <figcaption>
                             <em>Horizontals:</em> X 1.0<br>
                             <em>Verticals:</em> Y 1.0<br>
@@ -509,7 +511,7 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/tBbmJQf3yOw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>8.4. D-Pad</h2>
                     <p>
                         To access the B0XX’s D-pad, hold down Modifier X and Modifier Y
@@ -523,9 +525,9 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>8.5. Nunchuk</h2>
-                    <img id="imgNunchuck" src="images/8.5CaptureNunchuck.png" alt="Wii Nunchuck" type="image/png">
+                    <img id="imgNunchuck" src="images/nunchuck.png" alt="Wii Nunchuck" type="image/png">
                     <p>
                         The B0XX is compatible with the Nintendo Wii Nunchuk (sold separately).
                         Once plugged in, the Nunchuk will cause the B0XX to hot-swap into
@@ -539,8 +541,8 @@
             </section>
 
             <section class="main-section" id="Nerfs">
-                <header>9. Nerfs</header>
-                <article>
+                <header class="main-header">9. Nerfs</header>
+                <article class="main-article">
                     <p>
                         Throughout this document, the controller presented to you was deliberately
                         stripped of its ability to perform certain techniques within <em>Super Smash Bros.
@@ -549,15 +551,15 @@
                     </p>
                     
                     <ul>
-                        <li>Ice Climbers desyncs</li>
-                        <li>Shield Drop directly downwards</li>
-                        <li>Turning and performing a vertical tilt attack <em>without</em> buffering the analog
+                        <li class="main-li">Ice Climbers desyncs</li>
+                        <li class="main-li">Shield Drop directly downwards</li>
+                        <li class="main-li">Turning and performing a vertical tilt attack <em>without</em> buffering the analog
                             stick in Y-smash</li>
-                        <li>Pointing in Y-tilt while also pointing in vertical-B territory</li>
-                        <li>Perfect ambiguous DI mix-ups when thrown vertically (i.e. X-values directly
+                        <li class="main-li">Pointing in Y-tilt while also pointing in vertical-B territory</li>
+                        <li class="main-li">Perfect ambiguous DI mix-ups when thrown vertically (i.e. X-values directly
                             next to each other instead of spaced out)</li>
-                        <li>Extremely steep up-B and airdodge angles</li>
-                        <li>Extremely light analog L/R presses</li>
+                        <li class="main-li">Extremely steep up-B and airdodge angles</li>
+                        <li class="main-li">Extremely light analog L/R presses</li>
                     </ul>
 
                     <p>
@@ -569,10 +571,10 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>9.1. Accidental Side-B</h2>
-                    <figure>
-                        <img id="imgRectangle" src="images/9.1CaptureRectangle.png" alt="Accidental Side-B Coordinates" type="image/png">
+                    <figure id="figRectangle">
+                        <img src="images/9.1CaptureRectangle.png" alt="Accidental Side-B Coordinates" type="image/png">
                         <figcaption>
                             <em>Modifier Y + Horizontal + B:</em> <strike>X .3375</strike> → X 1.0
                         </figcaption>
@@ -592,9 +594,9 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>9.2. Smash DI</h2>
-                    <img id="imgSquare" src="images/9.2CaptureSquare.png" alt="Smash DI Coordinates Example" type="image/png">
+                    <img class="imgSquare" src="images/9.2CaptureSquare.png" alt="Smash DI Coordinates Example" type="image/png">
                     <p>
                         On a Gamecube controller, the go-to method for smash DI is “quarter-circle
                         smash DI,” which involves pointing the analog stick in a cardinal direction
@@ -630,9 +632,9 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="main-article">
                     <h2>9.3. Pivot Tilts</h2>
-                    <img id="imgSquare" src="images/9.3CaptureSquare.png" alt="Pivot Tilt Coordinates" type="image/png">
+                    <img class="imgSquare" src="images/9.3CaptureSquare.png" alt="Pivot Tilt Coordinates" type="image/png">
                     <p>
                         On a Gamecube controller, performing vertical tilts shortly after pivoting is
                         nearly impossible due to the nature of the analog stick motion required. In
@@ -646,5 +648,6 @@
                 </article>
             </section>
         </main>
+        <script src="scripts/nightmode.js"></script>
     </body>
 </html>

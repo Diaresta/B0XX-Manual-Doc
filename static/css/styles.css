@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    height: 100vh;
+    color: rgb(43, 42, 42); 
+}
+
+header {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+figure {
+    width: 560px;
+    text-align: center;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    border-right: 3px solid black;
+    padding: 15px 0 15px 0;
+}
+
+#navbar header {
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#navbar a {
+    display: block;
+    padding: 25px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbar a:hover {
+    color: rgb(69, 69, 69);
+    transition: color .2s;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: space-between;
+}
+
+#navbar li {
+    list-style: none;
+    position: relative;
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+#nav-logo {
+    width: 258px;
+    margin-left: 20px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 25px;
+}
+
+#b0xxLayout {
+    height: 500px;
+}
+
+#figRectangle {
+    width: 560px;
+}
+
+#figRectangle img {
+    width: 560px;
+}
+
+#imgNunchuck {
+    height: 500px;
+}
+
+.main-header {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.main-article {
+    margin: 15px;
+}
+
+.main-li {
+    margin: 15px 0px 0px 15px;
+}
+
+.greenLiText {
+    color: green;
+}
+
+.redLiText {
+    color: red;
+}
+
+.imgSquare {
+    width: 560px;
+}
