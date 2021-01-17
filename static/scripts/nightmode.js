@@ -68,3 +68,5 @@ function forLoopBorderBlack(element){
         element[i].style.borderTop = '2px solid black';
     }
 }
+
+// add main display none when hamburger is clicked
