@@ -70,3 +70,5 @@ function forLoopBorderBlack(element){
 }
 
 // add main display none when hamburger is clicked
+
+// add navbar-container display none when li is clicked

@@ -18,7 +18,11 @@
     </head>
     <body>
         <!-- Add button to border-right to collapse/open navbar -->
-        <div id="hamburger-div"></div>
+        <div id="hamburger-div">
+            <img id="hamburger-img" src="/static/images/hamburger.png">
+            <input id="hamburger-input" type="checkbox" name="checkbox"> 
+        </div>
+
         <nav id="navbar">
             <img id="nav-logo" src="images/header-logo.png"  alt="B0XX Logo" type="image/png">
             <header id="site-header">Super Smash Bros. Melee Manual</header>
@@ -650,8 +654,8 @@
                     </p>
                 </article>
             </section>
-            <input id="nightmode-toggle" type="checkbox" name="light-mode"> 
         </main>
+        <input id="nightmode-toggle" type="checkbox" name="light-mode"> 
         <script src="scripts/nightmode.js"></script>
     </body>
 </html>
