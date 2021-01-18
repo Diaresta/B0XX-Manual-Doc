@@ -6,6 +6,9 @@ var nav = document.getElementById('navbar');
 var navLi = document.getElementsByClassName('nav-li');
 var navLink = document.getElementsByClassName('nav-link');
 var navLogo = document.getElementById('nav-logo');
+var nightLabel = document.getElementById('nightmode-label');
+
+var mediaQ = window.matchMedia("(max-width: 800px)");
 
 nightmodeButton.onclick = () => {
     if(nightmodeButton.name.includes('light-mode')){
@@ -21,11 +24,16 @@ function nightmode() {
     document.body.style.color   = 'white';
     nav.style.borderRight = '3px solid #00ebff';
     navLogo.style.filter = 'drop-shadow(1px 1px .03rem white)';
+    nightLabel.style.backgroundColor = 'rgb(245, 245, 245)';
+    nightLabel.style.transition = 'background 0.2s linear';
+    nightLabel.className = 'fas fa-sun';
+    
 
     forLoopBlue(navLi);
     forLoopWhite(navLink);
     forLoopWhite(header);
     forLoopWhite(h2);
+    mediaQWidth(mediaQ);
 
     nightmodeButton.name = 'night-mode';
 }
@@ -36,11 +44,15 @@ function lightmode() {
     document.body.style.color   = 'rgb(43, 42, 42)';
     nav.style.borderRight = '3px solid black';
     navLogo.style.filter = 'drop-shadow(2px 2px .03rem black)';
+    nightLabel.style.backgroundColor = 'black';
+    nightLabel.style.transition = 'background 0.2s linear';
+    nightLabel.className = 'fas fa-moon';
 
     forLoopBorderBlack(navLi);
     forLoopBlack(navLink);
     forLoopBlack(header);
     forLoopBlack(h2);
+    mediaQWidth(mediaQ);
 
     nightmodeButton.name = 'light-mode';
 }
@@ -66,6 +78,12 @@ function forLoopBlack(element){
 function forLoopBorderBlack(element){
     for(let i = 0; i < element.length; i++){
         element[i].style.borderTop = '2px solid black';
+    }
+}
+
+function mediaQWidth(x) {
+    if(x.matches){
+        nav.style.borderRight = '0px';
     }
 }
 

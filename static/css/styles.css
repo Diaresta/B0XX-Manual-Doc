@@ -23,6 +23,7 @@ figure {
     position: absolute;
     top: 0;
     right: 0;
+    display: none;
 }
 
 #navbar {
@@ -109,6 +110,29 @@ figure {
     height: 500px;
 }
 
+#nightmode-label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+    text-align: center;
+    margin: 8px 8px 0 0;
+	padding: 5px 5px 6px 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+	height: 15px;
+	width: 15px;
+	transform: scale(1.5);
+}
+
+.fa-moon {
+    color: #f5f3ce;
+}
+
+.fa-sun {
+    color: #fdd835;
+}
+
 .main-header {
     font-size: 1.8em;
     font-weight: bold;
@@ -136,6 +160,9 @@ figure {
 }
 
 @media screen and (max-width: 800px) {
+    #nightmode-label {
+        transform: scale(1);
+    }
     
     #navbar {
         position: absolute;
