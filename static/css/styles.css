@@ -193,3 +193,84 @@ figure {
         height: 374px;
     }
 }
+
+
+@media screen and (max-width: 400px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    figure {
+        width: 400px;
+        margin-left: -20px;
+    }
+
+    iframe {
+        width: 400px;
+        height: 233px;
+        margin-left: -28px;
+    }
+    
+    #nav-logo {
+        margin-left: 56px;
+    }
+
+    #site-header {
+        width: 100%;
+        font-size: 2.1em !important;
+        font-weight: 900;
+        padding-left: 0px;
+        position: absolute;
+        margin: 85px 0 0 40px !important;
+        border-bottom: 1px solid rgba(0, 0 , 0, 0.3);
+        text-align: center;
+    }
+
+    #hamburger-img {
+        display: initial;
+        position: fixed;
+        height: 25px;
+    }
+
+    #hamburger-input {
+        display: initial;
+    }
+
+    #main-doc {
+        width: 375px;
+        margin-left: 0px;
+        padding: 200px 12.5px 25px 12.5px;
+        /* display: none; */
+    }
+
+    #b0xxLayout {
+        width: 375px;
+        height: 187px;
+        margin-left: -15px;
+    }
+
+    #figRectangle {
+        width: 400px;
+    }
+    
+    #figRectangle img {
+        width: 375px;
+        margin-left: -15px;
+    }
+
+    .imgSquare {
+        width: 375px;
+        margin-left: -15px;
+    }
+
+    .smSquareFig {
+        margin-left: -28px;
+    }
+
+    .smSquare {
+        width: 375px;
+        height: 374px;
+    }
+}
+
