@@ -19,11 +19,17 @@ figure {
     text-align: center;
 }
 
+#hamburger-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #nightmode-toggle {
     position: absolute;
     top: 0;
     right: 0;
-    /* display: none; */
+    display: none;
 }
 
 #navbar {
@@ -82,10 +88,13 @@ figure {
 
 #hamburger-img {
     display: none;
+    z-index: 9999;
 }
 
 #hamburger-input {
     display: none;
+    z-index: 9999;
+    height: 25px;
 }
 
 #main-doc {

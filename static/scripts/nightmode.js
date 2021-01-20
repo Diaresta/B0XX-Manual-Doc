@@ -7,8 +7,22 @@ var navLi = document.getElementsByClassName('nav-li');
 var navLink = document.getElementsByClassName('nav-link');
 var navLogo = document.getElementById('nav-logo');
 var nightLabel = document.getElementById('nightmode-label');
-
+var hamburgerButton = document.getElementById('hamburger-input');
+var navContainer = document.getElementById('navbar-container');
 var mediaQ = window.matchMedia("(max-width: 800px)");
+// --------------------------------------------------------------------
+
+// Hides navbar when link is clicked
+for(let i = 0; i < navLink.length; i++){
+    navLink[i].onclick = () => {
+        console.log('reeee');
+        if (mediaQ.matches){
+            navContHide();
+        }
+    }
+}
+
+// --------------------------------------------------------------------
 
 nightmodeButton.onclick = () => {
     if(nightmodeButton.name.includes('light-mode')){
@@ -18,7 +32,16 @@ nightmodeButton.onclick = () => {
     }
 };
 
-function nightmode() {
+hamburgerButton.onclick = () => {
+    if(hamburgerButton.name.includes('display-none')){
+        navContShow();
+    } else {
+        navContHide();
+    }
+};
+
+// ---------- Light/Night-mode  ----------
+function nightmode(){
     document.body.style.backgroundColor = 'black';
     document.body.style.transition = 'background 0.2s linear';
     document.body.style.color   = 'white';
@@ -38,7 +61,7 @@ function nightmode() {
     nightmodeButton.name = 'night-mode';
 }
 
-function lightmode() {
+function lightmode(){
     document.body.style.backgroundColor = 'rgb(245, 245, 245)';
     document.body.style.transition = 'background 0.2s linear';
     document.body.style.color   = 'rgb(43, 42, 42)';
@@ -81,12 +104,32 @@ function forLoopBorderBlack(element){
     }
 }
 
+// ------------------------------ media query testing --------------
+
 function mediaQWidth(x) {
     if(x.matches){
         nav.style.borderRight = '0px';
+        console.log('reeee');
     }
 }
 
-// add main display none when hamburger is clicked
+// Show and hide navbar when media query is active
+function navContShow(){
+    navContainer.style.display = 'inherit';
+    hamburgerButton.name = 'display-show';
+    hamburgerButton.src = "/static/images/menu-x.png"
+    document.body.style.overflowY = 'hidden';
+}
 
-// add navbar-container display none when li is clicked
+function navContHide(){
+    navContainer.style.display = 'none';
+    hamburgerButton.name = 'display-none';
+    hamburgerButton.src = "/static/images/hamburger.png"
+    document.body.style.overflowY = 'initial';
+}
+
+// fix navCont color styling when nightmode/lightmode enabled
+
+
+
+
