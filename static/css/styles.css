@@ -159,12 +159,54 @@ figure {
     width: 560px;
 }
 
+@media screen and (max-width: 1300px) {
+    #navbar {
+        width: 200px;
+    }
+
+    #nav-logo {
+        width: 175px;
+        margin-left: 10px;
+        filter: drop-shadow(2px 2px .03rem black);
+    }
+
+    #main-doc {
+        width: 1050px;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #main-doc {
+        width: 950px;
+        margin-left: 200px;
+    }
+
+    #b0xxLayout {
+        width: 900px;
+        height: 449px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #main-doc {
+        width: 825px;
+        margin-left: 200px;
+    }
+
+    #b0xxLayout {
+        width: 750px;
+        height: 374px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     #nightmode-label {
         transform: scale(1);
     }
     
     #navbar {
+        width: 300px;
         position: absolute;
         border: 0px;
     }
@@ -185,6 +227,7 @@ figure {
     }
     
     #nav-logo {
+        width: 258px;
         margin-left: ;
     }
 
@@ -214,16 +257,10 @@ figure {
         padding: 100px 12.5px 25px 12.5px;
         /* display: none; */
     }
-
-    #b0xxLayout {
-        width: 750px;
-        height: 374px;
-    }
 }
 
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 415px) {
     html {
         overflow-x: hidden;
     }
@@ -300,4 +337,83 @@ figure {
         height: 374px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    figure {
+        width: 335px;
+        margin-left: -20px;
+    }
+
+    iframe {
+        width: 375px;
+        height: 208px;
+        margin-left: -28px;
+    }
+    
+    #nav-logo {
+        margin-left: 45px;
+    }
+
+    #site-header {
+        width: 100%;
+        font-size: 2.1em !important;
+        font-weight: 900;
+        padding-left: 0px;
+        position: absolute;
+        margin: 85px 0 0 27px !important;
+        border-bottom: 1px solid rgba(0, 0 , 0, 0.3);
+        text-align: center;
+    }
+
+    #hamburger-img {
+        display: initial;
+        position: fixed;
+        height: 25px;
+    }
+
+    #main-doc {
+        width: 350px;
+        margin-left: 0px;
+        padding: 200px 12.5px 25px 12.5px;
+        /* display: none; */
+    }
+
+    #b0xxLayout {
+        width: 360px;
+        height: 180px;
+        margin-left: -28px;
+    }
+
+    #figRectangle {
+        width: 360px;
+    }
+    
+    #figRectangle img {
+        width: 360px;
+        margin-left: -15px;
+    }
+
+    figure .imgSquare {
+        margin-left: -8px;
+    }
+
+    .imgSquare {
+        width: 360px;
+        margin-left: -28px;
+    }
+
+    .smSquareFig {
+        margin-left: -28px;
+    }
+
+    .smSquare {
+        width: 360px;
+        height: 359px;
+    }
+}
+
 
