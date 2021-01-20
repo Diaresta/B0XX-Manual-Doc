@@ -23,7 +23,7 @@ figure {
     position: absolute;
     top: 0;
     right: 0;
-    display: none;
+    /* display: none; */
 }
 
 #navbar {
@@ -280,12 +280,13 @@ figure {
         margin-left: 56px;
     }
 
+    #navbar-container {
+        width: 415px;
+    }
+
     #site-header {
         width: 100%;
-        font-size: 2.1em !important;
-        font-weight: 900;
         padding-left: 0px;
-        position: absolute;
         margin: 85px 0 0 40px !important;
         border-bottom: 1px solid rgba(0, 0 , 0, 0.3);
         text-align: center;
@@ -358,15 +359,16 @@ figure {
         margin-left: 45px;
     }
 
+    #navbar-container {
+        width: 375px;
+        /* display: none; */
+    }
+
     #site-header {
         width: 100%;
         font-size: 2.1em !important;
         font-weight: 900;
-        padding-left: 0px;
-        position: absolute;
         margin: 85px 0 0 27px !important;
-        border-bottom: 1px solid rgba(0, 0 , 0, 0.3);
-        text-align: center;
     }
 
     #hamburger-img {
