@@ -10,18 +10,7 @@ var nightLabel = document.getElementById('nightmode-label');
 var hamburgerButton = document.getElementById('hamburger-input');
 var navContainer = document.getElementById('navbar-container');
 var mediaQ = window.matchMedia("(max-width: 800px)");
-// --------------------------------------------------------------------
-
-// Hides navbar when link is clicked
-for(let i = 0; i < navLink.length; i++){
-    navLink[i].onclick = () => {
-        console.log('reeee');
-        if (mediaQ.matches){
-            navContHide();
-        }
-    }
-}
-
+var counter = 0;
 // --------------------------------------------------------------------
 
 nightmodeButton.onclick = () => {
@@ -30,6 +19,7 @@ nightmodeButton.onclick = () => {
     } else {
         lightmode();
     }
+
 };
 
 hamburgerButton.onclick = () => {
@@ -39,6 +29,26 @@ hamburgerButton.onclick = () => {
         navContHide();
     }
 };
+
+// Fixes display when toggling hamburger menu
+window.addEventListener('resize', function(event) {
+    if (window.innerWidth < 801){
+        nav.style.borderRight = '0px';
+        navContHide();
+    } else {
+        navContainer.style.display = 'inherit';
+        nav.style.borderRight = '3px solid black';
+    }
+});
+
+// Hides navbar when link is clicked
+for(let i = 0; i < navLink.length; i++){
+    navLink[i].onclick = () => {
+        if (mediaQ.matches){
+            navContHide();
+        }
+    }
+}
 
 // ---------- Light/Night-mode  ----------
 function nightmode(){
@@ -50,6 +60,7 @@ function nightmode(){
     nightLabel.style.backgroundColor = 'rgb(245, 245, 245)';
     nightLabel.style.transition = 'background 0.2s linear';
     nightLabel.className = 'fas fa-sun';
+    hamburgerButton.src = "/static/images/hamburgerdm.png"
     
 
     forLoopBlue(navLi);
@@ -59,6 +70,8 @@ function nightmode(){
     mediaQWidth(mediaQ);
 
     nightmodeButton.name = 'night-mode';
+    counter = 1;
+    return counter;
 }
 
 function lightmode(){
@@ -70,6 +83,7 @@ function lightmode(){
     nightLabel.style.backgroundColor = 'black';
     nightLabel.style.transition = 'background 0.2s linear';
     nightLabel.className = 'fas fa-moon';
+    hamburgerButton.src = "/static/images/hamburger.png"
 
     forLoopBorderBlack(navLi);
     forLoopBlack(navLink);
@@ -78,6 +92,8 @@ function lightmode(){
     mediaQWidth(mediaQ);
 
     nightmodeButton.name = 'light-mode';
+    counter = 0;
+    return counter;
 }
 
 function forLoopWhite(element){
@@ -104,12 +120,10 @@ function forLoopBorderBlack(element){
     }
 }
 
-// ------------------------------ media query testing --------------
-
+// Media Query Border Resize Fix 
 function mediaQWidth(x) {
     if(x.matches){
         nav.style.borderRight = '0px';
-        console.log('reeee');
     }
 }
 
@@ -126,9 +140,11 @@ function navContHide(){
     hamburgerButton.name = 'display-none';
     hamburgerButton.src = "/static/images/hamburger.png"
     document.body.style.overflowY = 'initial';
-}
 
-// fix navCont color styling when nightmode/lightmode enabled
+    if (counter == 0) {
+        hamburgerButton.src = "/static/images/hamburger.png"
+    } else nightmode();
+}
 
 
 
