@@ -230,7 +230,7 @@ figure {
         margin: auto;
         width: 800px;
         height: 100%;
-        background: #d3d3d3;
+        background: #9c9c9c;
         display: none;
         z-index: 1;
     }
@@ -263,7 +263,6 @@ figure {
         width: 775px;
         margin-left: 0px;
         padding: 100px 12.5px 25px 12.5px;
-        /* display: none; */
     }
 }
 
@@ -314,7 +313,6 @@ figure {
         width: 375px;
         margin-left: 0px;
         padding: 200px 12.5px 25px 12.5px;
-        /* display: none; */
     }
 
     #b0xxLayout {
@@ -369,7 +367,6 @@ figure {
 
     #navbar-container {
         width: 375px;
-        /* display: none; */
     }
 
     #site-header {
@@ -389,7 +386,6 @@ figure {
         width: 350px;
         margin-left: 0px;
         padding: 200px 12.5px 25px 12.5px;
-        /* display: none; */
     }
 
     #b0xxLayout {

@@ -145,7 +145,3 @@ function navContHide(){
         hamburgerButton.src = "/static/images/hamburger.png"
     } else nightmode();
 }
-
-
-
-
